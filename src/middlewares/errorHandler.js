@@ -1,5 +1,5 @@
-const { AppError, ValidationError } = require("../helpers/errors");
-
+const { AppError, ValidationError } = require("../core/errors");
+const multer = require("multer");
 const requireJsonBody = (req, res, next) => {
     const body = req.body;
     if (body === null || typeof body !== "object" || Array.isArray(body)) {

@@ -1,6 +1,5 @@
-const path = require('path');
-const createUploader = require('../helpers/createUploader');
-
+const path = require("path");
+const createUploader = require("../core/uploader");
 const publicDir = path.join(__dirname, '..', 'public');
 
 const imageTypes = Object.freeze({

@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const { UnauthorizedError, ForbiddenError } = require("../helpers/errors");
+const { UnauthorizedError, ForbiddenError } = require("../core/errors");
 const { ROLES } = require("../models/User");
 
 const requireAuth = (req, res, next) => {
